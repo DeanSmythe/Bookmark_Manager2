@@ -88,6 +88,8 @@ GEM
       rack (~> 2.2)
       rack-protection (= 2.1.0)
       tilt (~> 2.0)
+    sinatra-base (1.0)
+      rack (>= 1.0)
     sinatra-contrib (2.1.0)
       multi_json
       mustermann (~> 1.0)
@@ -116,6 +118,7 @@ DEPENDENCIES
   simplecov
   simplecov-console
   sinatra
+  sinatra-base
   sinatra-contrib
   webrick
 
