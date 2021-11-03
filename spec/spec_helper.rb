@@ -1,12 +1,19 @@
-ENV['RACK_ENV'] = 'test'
 
-# SimpleCov.start
-require_relative '../app'
 require 'capybara'
 require 'capybara/rspec'
 require 'rspec'
 require 'simplecov'
+require_relative '../app.rb'
+require_relative './setup_test_database'
 
+ENV['RACK_ENV'] = 'test'
+ENV['ENVIRONMENT'] = 'test'
+
+RSpec.configure do |config|
+  config.before(:each) do
+    setup_test_database
+  end
+end
 
 # Tell Capybara to talk to BookmarkManager
 Capybara.app = BookmarkManager
