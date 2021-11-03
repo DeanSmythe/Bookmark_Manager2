@@ -8,7 +8,7 @@ class Bookmarks
   conn.exec( "SELECT * FROM bookmarks" ) do |result|
     result.each do |row|
       puts row
-      @bookmarks << row.values_at('url')
+      @bookmarks << row['url']
     end
   end
 
