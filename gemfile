@@ -2,23 +2,22 @@ source "https://rubygems.org"
 
 ruby '3.0.0'
 
+gem "rspec", "~> 3.10"
 
-gem 'sinatra'
-gem 'sinatra-base'
-gem 'sinatra-contrib'
-gem 'sinatra-reloader'
+gem "sinatra", "~> 1.4"
+
+gem "capybara", "~> 3.36"
+
+gem "sinatra-reloader", "~> 1.0"
+
+
 gem 'webrick'
 gem 'selenium-webdriver'
 gem 'pg'
 
-gem 'launchy'
-
-group :test do
-  gem 'capybara'
-  gem 'rspec'
   gem 'simplecov', require: false
   gem 'simplecov-console', require: false
-end
+
 
 group :development, :test do
   gem 'rubocop', '1.20'

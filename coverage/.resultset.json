@@ -1,0 +1,116 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/dsmythe/Projects/MakersProjects/Bookmarkmanager/app.rb": {
+        "lines": [
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          null
+        ]
+      },
+      "/Users/dsmythe/Projects/MakersProjects/Bookmarkmanager/lib/bookmarks.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          null,
+          1,
+          2,
+          2,
+          2,
+          null,
+          0,
+          null,
+          null,
+          2,
+          2,
+          9,
+          null,
+          null,
+          2,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/dsmythe/Projects/MakersProjects/Bookmarkmanager/spec/bookmarks_spec.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/dsmythe/Projects/MakersProjects/Bookmarkmanager/spec/features/viewing_bookmarks_spec.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null
+        ]
+      }
+    },
+    "timestamp": 1636024876
+  }
+}

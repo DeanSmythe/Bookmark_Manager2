@@ -1,9 +1,9 @@
-require 'sinatra'
+
 require 'sinatra/base'
 require 'sinatra/reloader'
 require './lib/bookmarks'
 
-class BookmarkManager < Sinatra::Base
+class BookmarkManager < Sinatra::Base # Inherit
   configure :development do
     register Sinatra::Reloader
   end

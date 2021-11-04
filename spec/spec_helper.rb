@@ -2,19 +2,25 @@
 require 'capybara'
 require 'capybara/rspec'
 require 'rspec'
+require 'sinatra/base'
 require 'simplecov'
-require_relative '../app.rb'
+require 'simplecov-console'
+
 require_relative './setup_test_database'
 
-ENV['RACK_ENV'] = 'test'
+SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter.new([SimpleCov::Formatter::Console])
+SimpleCov.start
+
+# ENV['RACK_ENV'] = 'test'
 ENV['ENVIRONMENT'] = 'test'
 
 RSpec.configure do |config|
   config.before(:each) do
-    setup_test_database
+    'setup_test_database'
   end
 end
 
+require './app'
 # Tell Capybara to talk to BookmarkManager
 Capybara.app = BookmarkManager
 

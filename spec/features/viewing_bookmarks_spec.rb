@@ -1,11 +1,16 @@
+
+# require 'setup_test_database'
+require 'spec_helper'
+
 feature 'views bookmarks' do
 
-  scenario 'user views list of bookmarks' do
+  scenario 'user views homepage' do
     visit '/'
     expect(page).to have_content 'Bookmark Manager'  
   end
 
-  before(each) do setup_database
+  # before(:each) do setup_test_database
+  # end
 
   scenario 'user views list of bookmarks' do
 
