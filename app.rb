@@ -24,7 +24,7 @@ class BookmarkManager < Sinatra::Base # Inherit
   end
 
   post '/bookmarks' do
-    Bookmarks.create(new_bookmark: params['add_new_bookmark'])
+    Bookmarks.create(new_bookmark: params['add_new_bookmark'], title: params['add_new_title'])
     redirect '/bookmarks'
   end
 
