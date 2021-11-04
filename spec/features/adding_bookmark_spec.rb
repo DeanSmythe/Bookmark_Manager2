@@ -7,8 +7,8 @@ feature 'add bookmarks' do
     # see the new message on teh message board
     visit '/bookmarks'
     click_button('Add new bookmark')
-    fill_in 'bookmark', with: 'Test url'
-    click_button('submit')
+    fill_in 'add_new_bookmark', with: 'Test url'
+    click_button('Submit')
     expect(page).to have_content 'Test url'
 
   end
