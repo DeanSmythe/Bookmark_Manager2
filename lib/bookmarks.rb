@@ -16,6 +16,7 @@ class Bookmarks
       end
     end   
   return @bookmarks
+  # Alternative method.
     # result = conn.exec('SELECT * FROM bookmarks;')
         # result.map { |bookmark| bookmark['url']}
   end
