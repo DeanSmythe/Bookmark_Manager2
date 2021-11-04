@@ -1,5 +1,4 @@
 
-# require 'setup_test_database'
 require 'spec_helper'
 
 feature 'views bookmarks' do
