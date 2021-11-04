@@ -24,15 +24,7 @@ class BookmarkManager < Sinatra::Base # Inherit
   end
 
   post '/bookmarks' do
-    # p "back to bookmarks after data entry"
-    # p params
-    # Bookmarks.create( params[:add_new_bookmark] )
-    # new_bookmark = params['add_new_bookmark']
-    # p new_bookmark
     Bookmarks.create(new_bookmark: params['add_new_bookmark'])
-    # conn = PG.connect( dbname: 'bookmark_manager' )
-    # conn.exec("INSERT INTO bookmarks (url) VALUES('#{new_bookmark}')")
-    # Add the new bookmark to the database
     redirect '/bookmarks'
   end
 
